@@ -2,45 +2,70 @@ const { cmd } = require("../command");
 
 cmd({
   pattern: "post",
-  alias: ["status", "story"],
-  desc: "Post media to WhatsApp status",
+  alias: ["poststatus", "status", "story", "repost", "reshare"],
+  react: '📝',
+  desc: "Posts replied media to bot's status",
   category: "utility",
   filename: __filename
-}, async (client, message, match, { isCreator }) => {
-  if (!isCreator) return await message.reply("*📛 Owner only command*");
-
-  const quoted = message.quoted || message;
-  
-  // 1. Handle Text Status
-  if (quoted.text && !quoted.hasMedia) {
-    try {
-      await client.setStatus(quoted.text);
-      return await message.reply("✅ Text status updated");
-    } catch (e) {
-      return await message.reply("❌ Failed to update text status");
+}, async (client, message, match, { from, isCreator }) => {
+  try {
+    if (!isCreator) {
+      return await client.sendMessage(from, {
+        text: "*📛 This is an owner-only command.*"
+      }, { quoted: message });
     }
-  }
 
-  // 2. Handle Media Status
-  if (quoted.hasMedia) {
-    try {
-      const media = await quoted.download();
-      const caption = quoted.caption || "";
+    const quotedMsg = message.quoted ? message.quoted : message;
+    const mimeType = (quotedMsg.msg || quotedMsg).mimetype || '';
 
-      // For WhatsApp Business API
-      await client.sendMessage("status@broadcast", { 
-        [quoted.type.replace("Message", "")]: media,
-        caption: caption
-      });
-
-      // Alternative method
-      await client.setProfilePicture(media); // For profile picture as fallback
-      
-      return await message.reply("✅ Media posted to status");
-    } catch (error) {
-      return await message.reply(`❌ Error: ${error.message}`);
+    if (!mimeType) {
+      return await client.sendMessage(message.chat, {
+        text: "*Please reply to an image, video, or audio file.*"
+      }, { quoted: message });
     }
-  }
 
-  return await message.reply("⚠ Please reply to media or text");
+    const buffer = await quotedMsg.download();
+    const mtype = quotedMsg.mtype;
+    const caption = quotedMsg.text || '';
+
+    let statusContent = {};
+
+    switch (mtype) {
+      case "imageMessage":
+        statusContent = {
+          image: buffer,
+          caption: caption
+        };
+        break;
+      case "videoMessage":
+        statusContent = {
+          video: buffer,
+          caption: caption
+        };
+        break;
+      case "audioMessage":
+        statusContent = {
+          audio: buffer,
+          mimetype: "audio/mp4",
+          ptt: quotedMsg.ptt || false
+        };
+        break;
+      default:
+        return await client.sendMessage(message.chat, {
+          text: "Only image, video, and audio files can be posted to status."
+        }, { quoted: message });
+    }
+
+    await client.sendMessage("status@broadcast", statusContent);
+
+    await client.sendMessage(message.chat, {
+      text: "✅ Status Uploaded Successfully."
+    }, { quoted: message });
+
+  } catch (error) {
+    console.error("Status Error:", error);
+    await client.sendMessage(message.chat, {
+      text: "❌ Failed to post status:\n" + error.message
+    }, { quoted: message });
+  }
 });
