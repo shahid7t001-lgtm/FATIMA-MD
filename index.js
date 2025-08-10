@@ -114,9 +114,9 @@ const port = process.env.PORT || 9090;
   console.log('Bot connected to whatsapp ✅')
   
   let greetings = [
-  "🤖 DARKZONE-MD BOT",
-  "🚀 DARKZONE-MD ONLINE",
-  "👾 POWERED BY DARKZONE",
+  "🤖 FATIMA-MD BOT",
+  "🚀 FATIMA-MD ONLINE",
+  "👾 POWERED BY FATIMA-MD",
   "💡 INTELLIGENT BOT SYSTEM"
 ];
 
@@ -128,8 +128,8 @@ let subtitles = [
 ];
 
 let outro = [
-  "Thanks for choosing DARKZONE-MD!",
-  "Powered by *𝐸𝑅𝐹𝒜𝒩 𝒜𝐻𝑀𝒜𝒟💻*",
+  "Thanks for choosing FATIMA-MD!",
+  "Powered by *FATIMA-MD*",
   "Built for your convenience ⚡",
   "Leveling up your automation 🛠"
 ];
@@ -148,10 +148,10 @@ let up = `┏━━━━━━━━━━━━━━━━━━━┓
 ┃ ▸ *Mode:* Public
 ┃ ▸ *Owner:* 𝐸𝑅𝐹𝒜𝒩 𝒜𝐻𝑀𝒜𝒟
 ┗━━━━━━━━━━━━━━━━━━━
-*channel*: https://whatsapp.com/channel/0029Vb5dDVO59PwTnL86j13J
-⭐ *GitHub:* github.com/DARKZONE-MD/DARKZONE-MD.git`;
+*channel*: https://whatsapp.com/channel/0029VbAhxYY90x2vgwhXJV3O
+⭐ *GitHub:* https://github.com/policeduafatima/FATIMA-MD`;
 
-    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/4964gx.jpg` }, caption: up })
+    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/9frdhs.jpg` }, caption: up })
   }
   })
   conn.ev.on('creds.update', saveCreds)
