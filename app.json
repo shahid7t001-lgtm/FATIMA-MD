@@ -1,8 +1,8 @@
 {
-  "name": "DARKZONE-MD",
-  "description": "Javascript WhatsApp bot made by 𝐸𝑅𝐹𝒜𝒩 𝒜𝐻𝑀𝒜𝒟",
-  "logo": "https://files.catbox.moe/r2ncqh",
-  "keywords": ["DARKZONE-MD"],
+  "name": "FATIMA-MD",
+  "description": "Javascript WhatsApp bot made by  FATIMA-MD",
+  "logo": "https://files.catbox.moe/9frdhs.jpg",
+  "keywords": ["FATIMA-MD"],
   "success_url": "/",
 
     "stack": "container",
@@ -78,27 +78,27 @@
     "AUTO_STATUS_MSG": {
       "description": "Type custom message on status reply",
       "required": true,
-      "value": "*SEEN YOUR STATUS BY DARKZONE-MD 🖤*"
+      "value": "*SEEN YOUR STATUS BY FATIMA-MD 🖤*"
    
      }, 
     
     "OWNER_NAME": {
       "description": "Type Bot Owner Name.",
       "required": false,
-      "value": "ERFAN"
+      "value": "DUA"
 }, 
 
     "OWNER_NUMBER": {
       "description": "put the owner number for bot.",
       "required": false,
-      "value": "923306137477"
+      "value": "923155641171"
 
     }, 
 
     "BOT_NAME": {
       "description": "Type here the bot name.",
       "required": false,
-      "value": "DARKZONE-MD"
+      "value": "FATIMA-MD"
 
       }, 
 
@@ -131,13 +131,13 @@
     "MENU_IMAGE_URL": {
       "description": "add url for mention reply and menu if want.",
       "required": false,
-      "value": "https://files.catbox.moe/4964gx.jpg"
+      "value": "https://files.catbox.moe/9frdhs.jpg"
     },
     
      "DESCRIPTION": {
       "description": "add caption for menu and other",
       "required": false,
-      "value": "*CRESTER 𝐸𝑅𝐹𝒜𝒩 𝒜𝐻𝑀𝒜𝒟*"
+      "value": "*CREATER FATIMA-MD*"
     },
 
       "DELETE_LINKS": {
