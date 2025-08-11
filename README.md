@@ -45,13 +45,13 @@ DONT FORGET TO FORK 🍴 & STAR 🌟 REPO😇
 
 > **1. QR CODE SESSION ID**
 
-<a href='https://dua-pair-eae8b95816f6.herokuapp.com/' target="_blank">
+<a href='https:/https://dua-fatima-khwr.onrender.com/pair/' target="_blank">
   <img alt='Pairing Code' src='https://img.shields.io/badge/Get_Pairing_Code-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white'/>
 </a>
 
 > **2. PAIR CODE SESSION ID**
 
-<a href='[https://dua-fatima-khwr.onrender.com/pair]' target="_blank">
+<a href='[https://dua-pair-eae8b95816f6.herokuapp.com/pair]' target="_blank">
   <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-darkpink?style=for-the-badge&logo=opencv&logoColor=black'/>
 </a>
 <br> 
