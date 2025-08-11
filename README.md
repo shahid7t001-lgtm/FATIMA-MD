@@ -51,7 +51,7 @@ DONT FORGET TO FORK 🍴 & STAR 🌟 REPO😇
 
 > **2. PAIR CODE SESSION ID**
 
-<a href='[https://dua-pair-eae8b95816f6.herokuapp.com/]' target="_blank">
+<a href='[https://dua-fatima-khwr.onrender.com/pair]' target="_blank">
   <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-darkpink?style=for-the-badge&logo=opencv&logoColor=black'/>
 </a>
 <br> 
