@@ -1,13 +1,13 @@
-const { lite, commands } = require('../lite');
+const { cmd, commands } = require('../command');
 const axios = require('axios');
 
-lite({
+cmd({
     pattern: "pair",
     alias: ["getpair", "clonebot"],
     react: "✅",
     desc: "Get pairing code for FATIMA-MD bot",
     category: "download",
-    use: ".pair 923155641xxx",
+    use: ".pair 923155641XXX",
     filename: __filename
 }, async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, senderNumber, reply }) => {
     try {
@@ -16,7 +16,7 @@ lite({
 
         // Validate phone number format
         if (!phoneNumber || phoneNumber.length < 10 || phoneNumber.length > 15) {
-            return await reply("❌ Please provide a valid phone number without `+`\nExample: `.pair 923155641xxx`");
+            return await reply("❌ Please provide a valid phone number without `+`\nExample: `.pair 923155641XXX`");
         }
 
         // Make API request to get pairing code
@@ -27,7 +27,7 @@ lite({
         }
 
         const pairingCode = response.data.code;
-        const doneMessage = "> *FATIMA MD PAIRING COMPLETED*";
+        const doneMessage = "> *FATIMA-MD PAIRING COMPLETED*";
 
         // Send initial message with formatting
         await reply(`${doneMessage}\n\n*Your pairing code is:* ${pairingCode}`);
@@ -43,4 +43,3 @@ lite({
         await reply("❌ An error occurred while getting pairing code. Please try again later.");
     }
 });
-    
