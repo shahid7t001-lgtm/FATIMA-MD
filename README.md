@@ -139,7 +139,7 @@ DONT FORGET TO FORK 🍴 & STAR 🌟 REPO😇
 ```After that wait 10 seconds & your have deployed it successfuly  for free 24/7```
 
 > CREDITS PIKABOTZ🎐
-> **_✠ FREE DEPLOYMENT OF SHABAN MD GITHUB WORKFLOW CODE ✠_**
+> **_✠ FREE DEPLOYMENT OF FATIMA MD GITHUB WORKFLOW CODE ✠_**
 
 ```
 name: Node.js CI
