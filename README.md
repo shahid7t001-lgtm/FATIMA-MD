@@ -139,6 +139,46 @@ DONT FORGET TO FORK 🍴 & STAR 🌟 REPO😇
 ```After that wait 10 seconds & your have deployed it successfuly  for free 24/7```
 
 > CREDITS PIKABOTZ🎐
+> **_✠ FREE DEPLOYMENT OF SHABAN MD GITHUB WORKFLOW CODE ✠_**
+
+```
+name: Node.js CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [20.x]
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Start application
+      run: npm start
+```
+
+-------
+
 
 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ ꜰʀᴀɴᴋ ᴏꜰᴄ*</h6>
 
