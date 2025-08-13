@@ -45,7 +45,7 @@ DONT FORGET TO FORK 🍴 & STAR 🌟 REPO😇
 
 > **1. QR CODE SESSION ID**
 
-<a href='https:/https://dua-fatima-khwr.onrender.com/pair/' target="_blank">
+<a href='https://duapair.onrender.com' target="_blank">
   <img alt='Pairing Code' src='https://img.shields.io/badge/Get_Pairing_Code-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white'/>
 </a>
 
