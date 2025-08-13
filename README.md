@@ -56,7 +56,7 @@ DONT FORGET TO FORK 🍴 & STAR 🌟 REPO😇
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/policeduafatima/FATIMA-MD)
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
-### <h4 align="">3. KOYEB</h4>
+### <h4 align="">3. Render</h4>
 <p style="text-align: center; font-size: 1.2em;">
 
 <p align=""<a href='https://duapair.onrender.com' target="_blank">
@@ -70,6 +70,7 @@ DONT FORGET TO FORK 🍴 & STAR 🌟 REPO😇
   </a></br>
 
 ------------->
+
 <a href='https://app.koyeb.com/services/deploy?type=git&repository=itx-policeduafatima/FATIMA-MD&ports=3000&env[PREFIX]=.&env[SESSION_ID]=&env[ALWAYS_ONLINE]=false&env[MODE]=public&env[AUTO_STATUS_MSG]=Seen%20status%20by%20ALI-MD&env[AUTO_STATUS_REPLY]=false&env[AUTO_STATUS_SEEN]=true&env[AUTO_TYPING]=false&env[ANTI_LINK]=true&env[AUTO_REACT]=false&env[READ_MESSAGE]=false' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-koyeb ‎ deploy-FF009D?style=for-the-badge&logo=koyeb&logoColor=white'/< width=150 height=28/p></a>
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
