@@ -43,21 +43,7 @@ DONT FORGET TO FORK 🍴 & STAR 🌟 REPO😇
 
 `IF YOU DON'T HAVE YOUR SESSION_ID SO U CAN GET IT CLICK ON SESSION_ID BUTTON AND PASTE YOUR NUMBER With COUNTRY CODE EXAMPLE:92315xxxxxx THEN YOU CAN GET YOUR SESSION_ID ✠`
 
-> **1. QR CODE SESSION ID**
 
-<a href='https://duapair.onrender.com' target="_blank">
-  <img alt='Pairing Code' src='https://img.shields.io/badge/Get_Pairing_Code-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white'/>
-</a>
-
-> **2. PAIR CODE SESSION ID**
-
-<a href='[https://dua-pair-eae8b95816f6.herokuapp.com/pair]' target="_blank">
-  <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-darkpink?style=for-the-badge&logo=opencv&logoColor=black'/>
-</a>
-<br> 
-
- 
----
 
 ### <h2 align="">FATIMA-MD DEPLOYMENT OPTIONS𐃁</h2>
 
@@ -73,7 +59,17 @@ DONT FORGET TO FORK 🍴 & STAR 🌟 REPO😇
 ### <h4 align="">3. KOYEB</h4>
 <p style="text-align: center; font-size: 1.2em;">
 
-<p align="">
+<p align=""<a href='https://duapair.onrender.com' target="_blank">
+    <img src='https://img.shields.io/badge/PAIR_CODE-FF0000?style=for-the-badge&logo=matrix&logoColor=white&labelColor=000000'/>
+  </a></br>
+
+-------------
+
+<a href='https://dua-pair-eae8b95816f6.herokuapp.com/pair' target="_blank">
+    <img src='https://img.shields.io/badge/PAIR_CODE-00FFFF?style=for-the-badge&logo=matrix&logoColor=white&labelColor=000000'/>
+  </a></br>
+
+------------->
 <a href='https://app.koyeb.com/services/deploy?type=git&repository=itx-policeduafatima/FATIMA-MD&ports=3000&env[PREFIX]=.&env[SESSION_ID]=&env[ALWAYS_ONLINE]=false&env[MODE]=public&env[AUTO_STATUS_MSG]=Seen%20status%20by%20ALI-MD&env[AUTO_STATUS_REPLY]=false&env[AUTO_STATUS_SEEN]=true&env[AUTO_TYPING]=false&env[ANTI_LINK]=true&env[AUTO_REACT]=false&env[READ_MESSAGE]=false' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-koyeb ‎ deploy-FF009D?style=for-the-badge&logo=koyeb&logoColor=white'/< width=150 height=28/p></a>
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
