@@ -35,7 +35,7 @@ cmd({
 👀 *Views:* ${yts.views}
 👤 *Author:* ${yts.author.name}
 🔗 *Link:* ${yts.url}
-> Dua Fatima ❤️`;
+> DUA FATIMA ❤️`;
 
         // Send video directly with caption
         await conn.sendMessage(
