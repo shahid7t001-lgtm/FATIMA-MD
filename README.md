@@ -62,10 +62,10 @@ DONT FORGET TO FORK 🍴 & STAR 🌟 REPO😇
 
 -------------
 
-<a href='https://erfan-pair-site-bc04b1a802bf.herokuapp.com/' target="_blank">
-  <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-darkpink?style=for-the-badge&logo=opencv&logoColor=black'/>
-</a>
-<br>
+<a href='https://duapair.onrender.com/' target="_blank">
+    <img src='https://img.shields.io/badge/PAIR_CODE-FFF?style=for-the-badge&logo=matrix&logoColor=white&labelColor=000000'/>
+  </a></br>
+  
 
 ### <h2 align="">FATIMA-MD DEPLOYMENT OPTIONS𐃁</h2>
 
