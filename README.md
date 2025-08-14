@@ -13,7 +13,7 @@ DONT FORGET TO FORK 🍴 & STAR 🌟 REPO😇
 
 
   <p align="center">
-<a href="https://github.com/policeduafatima-ofc/followers"><img title="Followers" src="https://img.shields.io/github/followers/DARKZONE-MD?color=blue&style=flat-square"></a>
+<a href="https://github.com/policeduafatima-ofc/followers"><img title="Followers" src="https://img.shields.io/github/followers/FATIMA-MD?color=blue&style=flat-square"></a>
 <a href="https://github.com/policeduafatima/FATIMA-MD/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/policeduafatima/FATIMA-MD?color=blue&style=flat-square"></a>
 <a href="https://github.com/policeduafatima/FATIMA-MD/network/members"><img title="Forks" src="https://img.shields.io/github/forks/policeduafatima/FATIMA-MD?color=blue&style=flat-square"></a>
 <a href="https://github.com/policeduafatima/FATIMA-MD/"><img title="Size" src="https://img.shields.io/github/repo-size/policeduafatima/FATIMA-MD?style=flat-square&color=green"></a>
@@ -60,7 +60,12 @@ DONT FORGET TO FORK 🍴 & STAR 🌟 REPO😇
     <img src='https://img.shields.io/badge/PAIR_CODE-00FFFF?style=for-the-badge&logo=matrix&logoColor=white&labelColor=000000'/>
   </a></br>
 
----
+-------------
+
+<a href='https://erfan-pair-site-bc04b1a802bf.herokuapp.com/' target="_blank">
+  <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-darkpink?style=for-the-badge&logo=opencv&logoColor=black'/>
+</a>
+<br>
 
 ### <h2 align="">FATIMA-MD DEPLOYMENT OPTIONS𐃁</h2>
 
