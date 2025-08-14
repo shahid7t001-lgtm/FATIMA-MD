@@ -56,7 +56,7 @@ DONT FORGET TO FORK 🍴 & STAR 🌟 REPO😇
 
 -------------
 
-<a href='https://dua-pair-eae8b95816f6.herokuapp.com/pair/' target="_blank">
+<a href='https://dua-fatima-249adaf6ac47.herokuapp.com/' target="_blank">
     <img src='https://img.shields.io/badge/PAIR_CODE-00FFFF?style=for-the-badge&logo=matrix&logoColor=white&labelColor=000000'/>
   </a></br>
 
