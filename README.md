@@ -63,7 +63,7 @@ DONT FORGET TO FORK 🍴 & STAR 🌟 REPO😇
 -------------
 
 <a href='https://duapair.onrender.com/' target="_blank">
-    <img src='https://img.shields.io/badge/PAIR_CODE-FFF?style=for-the-badge&logo=matrix&logoColor=white&labelColor=000000'/>
+    <img src='https://img.shields.io/badge/PAIR_CODE-FFFB?style=for-the-badge&logo=matrix&logoColor=white&labelColor=000000'/>
   </a></br>
   
 
