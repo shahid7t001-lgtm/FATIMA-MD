@@ -44,19 +44,7 @@ DONT FORGET TO FORK 🍴 & STAR 🌟 REPO😇
 `IF YOU DON'T HAVE YOUR SESSION_ID SO U CAN GET IT CLICK ON SESSION_ID BUTTON AND PASTE YOUR NUMBER With COUNTRY CODE EXAMPLE:92315xxxxxx THEN YOU CAN GET YOUR SESSION_ID ✠`
 
 
-
-### <h2 align="">FATIMA-MD DEPLOYMENT OPTIONS𐃁</h2>
-
----
-
-### <h4 align="">1. HEROKU</h4>
-<p style="text-align: center; font-size: 1.2em;">
-
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/policeduafatima/FATIMA-MD)
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-
-### <h4 align="">3. Render</h4>
+### <h4 align="">3. Render</h1>
 <p style="text-align: center; font-size: 1.2em;">
 
 -------------
