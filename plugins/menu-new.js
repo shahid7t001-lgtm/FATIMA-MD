@@ -49,27 +49,17 @@ cmd({
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                 newsletterJid: '120363418144382782@newsletter',
-                        newsletterName: config.BOT_NAME,
-                        serverMessageId: 143
-                    }
-                }
-            },
-            { quoted: mek }
-        );
-// share local audio 
+                newsletterName: config.OWNER_NAME,
+                serverMessageId: 143
+            }
+        };
 
-const audioPath = path.join(__dirname, '../assets/menu.m4a');
-await conn.sendMessage(from, {
-    audio: fs.readFileSync(audioPath),
-    mimetype: 'audio/mp4',
-    ptt: true,
-}, { quoted: mek });
-        
-    } catch (e) {
-        console.log(e);
-        reply(`❌ Error: ${e}`);
-    }
-});
+        // Function to send menu image with timeout
+        const sendMenuImage = async () => {
+            try {
+                return await conn.sendMessage(
+                    from,
+                    {
                         image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/r2ncqh' },
                         caption: menuCaption,
                         contextInfo: contextInfo
