@@ -49,9 +49,9 @@ cmd({
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                 newsletterJid: '120363418144382782@newsletter',
-                newsletterName: config.OWNER_NAME,
-                serverMessageId: 143
-                            }
+                        newsletterName: config.BOT_NAME,
+                        serverMessageId: 143
+                    }
                 }
             },
             { quoted: mek }
