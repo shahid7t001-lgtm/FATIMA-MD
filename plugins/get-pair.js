@@ -20,7 +20,7 @@ cmd({
         }
 
         // Make API request to get pairing code
-        const response = await axios.get(`hhttps://dua-fatima-249adaf6ac47.herokuapp.com/code?number=${encodeURIComponent(phoneNumber)}`);
+        const response = await axios.get(`https://dua-fatima.onrender.com/code?number=${encodeURIComponent(phoneNumber)}`);
 
         if (!response.data || !response.data.code) {
             return await reply("❌ Failed to retrieve pairing code. Please try again later.");
