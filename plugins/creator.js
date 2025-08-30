@@ -13,9 +13,9 @@ async (conn, mek, m, { from, sender, reply }) => {
     try {
         // Owner information (you can modify these values)
         const ownerInfo = {
-            name: "𝐸𝑅𝐹𝒜𝒩 𝒜𝐻𝑀𝒜𝒟",
-            number: "+923306137477",
-            photo: "https://files.catbox.moe/71l0oz.jpg",
+            name: "Dua Fatima",
+            number: "+923155641171",
+            photo: "https://files.catbox.moe/iqxgwv.jpg",
             bio: "The creator of this amazing bot"
         };
 
@@ -48,7 +48,7 @@ async (conn, mek, m, { from, sender, reply }) => {
     } catch (e) {
         console.error("Creator Command Error:", e);
         // Fallback text if image fails
-        await reply(`👑 *Creator Info*\n\nName: 𝐸𝑅𝐹𝒜𝒩 𝒜𝐻𝑀𝒜𝒟\nNumber: +923306137477\n\nContact for bot support!`);
+        await reply(`👑 *Creator Info*\n\nName: Dua Fatima\nNumber: +923155641171\n\nContact for bot support!`);
     }
 });
 
