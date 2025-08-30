@@ -59,18 +59,18 @@ async (conn, mek, m, { from, sender, pushname, reply }) => {
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363416743041101@newsletter',
-                        newsletterName: '𝐸𝑅𝐹𝒜𝒩 𝒜𝐻𝑀𝒜𝒟',
-                        serverMessageId: 143
+                        newsletterJid: '120363418144382782@newsletter',
+                        newsletterName: 'Dua Fatima',
+                        serverMessageId: 779
                     }
                 }
             },
             { quoted: mek }
         );
 
-        // Send local audio from assets/menu.m4a
+        // Send local audio from assets/menu.m4aa
 
-const audioPath = path.join(__dirname, '../assets/menu.m4a');
+const audioPath = path.join(__dirname, '../assets/menu.m4aa');
 await conn.sendMessage(from, {
     audio: fs.readFileSync(audioPath),
     mimetype: 'audio/mp4',
