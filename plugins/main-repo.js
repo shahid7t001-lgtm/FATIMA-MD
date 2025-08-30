@@ -33,7 +33,7 @@ async (conn, mek, m, { from, reply }) => {
 
         // Send image with caption
         await conn.sendMessage(from, {
-            image: { url: `https://files.catbox.moe/27sdkb.jpg` },
+            image: { url: `https://files.catbox.moe/iqxgwv.jpg` },
             caption: formattedInfo,
             contextInfo: { 
                 mentionedJid: [m.sender],
@@ -42,7 +42,7 @@ async (conn, mek, m, { from, reply }) => {
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363418144382782@newsletter',
                     newsletterName: 'Dua Fatima',
-                    serverMessageId: 143
+                    serverMessageId: 779
                 }
             }
         }, { quoted: mek });
@@ -60,7 +60,7 @@ async (conn, mek, m, { from, reply }) => {
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363418144382782@newsletter',
                     newsletterName: 'Dua Fatima',
-                    serverMessageId: 143
+                    serverMessageId: 779
                 }
             }
         }, { quoted: mek });
