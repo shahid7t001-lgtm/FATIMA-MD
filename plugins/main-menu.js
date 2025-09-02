@@ -7,7 +7,7 @@ const {runtime} = require('../lib/functions')
 const axios = require('axios')
 
 cmd({
-    pattern: "menu2",
+    pattern: "dua",
     alias: ["allmenu","fullmenu"],
     use: '.dua',
     desc: "Show all bot commands",
