@@ -9,7 +9,7 @@ const axios = require('axios')
 cmd({
     pattern: "menu2",
     alias: ["allmenu","fullmenu"],
-    use: '.menu2',
+    use: '.dua',
     desc: "Show all bot commands",
     category: "menu",
     react: "📜",
