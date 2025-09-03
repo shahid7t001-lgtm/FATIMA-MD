@@ -44,7 +44,7 @@ cmd({
             `🔽 *Reply with your choice:*\n` +
             `1.1 *Audio Type* 🎵\n` +
             `1.2 *Document Type* 📁\n\n` +
-            `${config.FOOTER || "𓆩DUA FATIMA𓆪"}`;
+            `${config.FOOTER || "𓆩DuaFatima𓆪"}`;
 
         const sentMsg = await conn.sendMessage(from, { image: { url: image }, caption: info }, { quoted: mek });
         const messageID = sentMsg.key.id;
@@ -99,3 +99,4 @@ cmd({
         await reply(`❌ *An error occurred:* ${error.message || "Error!"}`);
     }
 });
+                               
