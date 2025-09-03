@@ -3,10 +3,10 @@ const { cmd, commands } = require('../command')
 const { runtime } = require('../lib/functions')
 
 cmd({
-    pattern: "list",
+    pattern: "irfan",
     alias: ["listcmd", "commands"],
     desc: "Show all available commands with descriptions",
-    category: "menu",
+    category: "fatima",
     react: "📜",
     filename: __filename
 }, async (conn, mek, m, { from, reply }) => {
