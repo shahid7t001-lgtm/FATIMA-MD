@@ -1,55 +1,45 @@
-const config = require('../config');
-const { cmd } = require('../command');
-const yts = require('yt-search');
+const axios = require("axios");
+const yts = require("yt-search");
+const config = require("../config");
+const { cmd } = require("../command");
 
 cmd({
-    pattern: "yt2",
-    alias: ["play2", "music"],
-    react: "🎵",
-    desc: "Download audio from YouTube",
-    category: "download",
-    use: ".song <query or url>",
-    filename: __filename
-}, async (conn, m, mek, { from, q, reply }) => {
-    try {
-        if (!q) return await reply("❌ Please provide a song name or YouTube URL!");
+  pattern: "play",
+  alias: ["song", "music"],   
+  desc: "Download YouTube audio by title",
+  category: "download",
+  react: "🎵",
+  filename: __filename
+}, async (conn, mek, m, { from, args, q, reply }) => {
+  try {
+    if (!q) return reply("❌ Please give me a song name.");
 
-        let videoUrl, title;
-        
-        // Check if it's a URL
-        if (q.match(/(youtube\.com|youtu\.be)/)) {
-            videoUrl = q;
-            const videoInfo = await yts({ videoId: q.split(/[=/]/).pop() });
-            title = videoInfo.title;
-        } else {
-            // Search YouTube
-            const search = await yts(q);
-            if (!search.videos.length) return await reply("❌ No results found!");
-            videoUrl = search.videos[0].url;
-            title = search.videos[0].title;
-        }
+    // 1. Search video on YouTube
+    let search = await yts(q);
+    let video = search.videos[0];
+    if (!video) return reply("❌ No results found.");
 
-        await reply("⏳ Downloading audio...");
+    // 2. Call your API with video URL
+    let apiUrl = `https://jawad-tech.vercel.app/download/yt?url=${encodeURIComponent(video.url)}`;
+    let res = await axios.get(apiUrl);
 
-        // Use API to get audio
-        const apiUrl = `https://api.davidcyriltech.my.id/download/ytmp3?url=${encodeURIComponent(videoUrl)}`;
-        const response = await fetch(apiUrl);
-        const data = await response.json();
-
-        if (!data.success) return await reply("❌ Failed to download audio!");
-
-        await conn.sendMessage(from, {
-            audio: { url: data.result.download_url },
-            mimetype: 'audio/mpeg',
-            ptt: false
-        }, { quoted: mek });
-
-        await reply(`✅ *${title}* downloaded successfully!`);
-
-    } catch (error) {
-        console.error(error);
-        await reply(`❌ Error: ${error.message}`);
+    if (!res.data.status) {
+      return reply("❌ Failed to fetch audio. Try again later.");
     }
-});
 
-          
+    // 3. Send audio file first
+    await conn.sendMessage(from, {
+      audio: { url: res.data.result },
+      mimetype: "audio/mpeg",
+      ptt: false,
+      contextInfo: { forwardingScore: 999, isForwarded: true }
+    }, { quoted: mek });
+
+    // 4. Then reply with success message
+    await reply(`✅ *${video.title}* Downloaded Successfully!`);
+
+  } catch (e) {
+    console.error("play2 error:", e);
+    reply("❌ Error while downloading audio.");
+  }
+});
