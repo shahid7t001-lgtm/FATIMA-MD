@@ -32,7 +32,7 @@ cmd({
         await reply("⏳ Downloading video...");
 
         // Use API to get video
-        const apiUrl = `https://apis.davidcyriltech.my.id/download/ytmp4?url=$(videoUrl)}`;
+        const apiUrl = `https://apis.davidcyriltech.my.id/download/ytmp4?url=${encodeURIComponent(videoUrl)}`;
         const response = await fetch(apiUrl);
         const data = await response.json();
 
@@ -51,4 +51,4 @@ cmd({
         await reply(`❌ Error: ${error.message}`);
     }
 });
-                         
+        
